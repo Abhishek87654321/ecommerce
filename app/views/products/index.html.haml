@@ -50,7 +50,7 @@
   }
   (function setupStripe() {
     //Initialize stripe with publishable key
-    var stripe = Stripe("pk_test_51MkO99SB79YqinrxOjaGgF804bWubRMJihg84YmoUF4l18TI3F91C81HFCf9Y8P43SKzOwXAacxXMH3pcwyFtpyd00BC7ELR1y");
+    var stripe = Stripe("#{ENV['STRIPE_PUBLISHABLE_KEY']}");
 
     //Create Stripe credit card elements.
     var elements = stripe.elements();

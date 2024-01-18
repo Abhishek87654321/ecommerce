@@ -12,7 +12,7 @@ class Orders::Stripe
           name: 'Premium plan',
         },
         currency: 'usd',
-        id: "premium-plan-just-#{customer.id}",
+        id: "premium-plan-just-",
       })
     end
 
