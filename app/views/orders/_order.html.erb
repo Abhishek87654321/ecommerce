@@ -1,0 +1,47 @@
+<div id="<%= dom_id order %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Product:</strong>
+    <%= order.product_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">User:</strong>
+    <%= order.user_id %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Status:</strong>
+    <%= order.status %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Boolean:</strong>
+    <%= order.boolean %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Token:</strong>
+    <%= order.token %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Price cents:</strong>
+    <%= order.price_cents %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Payment gateway:</strong>
+    <%= order.payment_gateway %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Customer:</strong>
+    <%= order.customer_id %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this order", order, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this order", edit_order_path(order), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
